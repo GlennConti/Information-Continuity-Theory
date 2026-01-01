@@ -1,0 +1,206 @@
+{
+  "nodes": [
+    {
+      "id": "ICT",
+      "label": "Information Continuity Theory",
+      "type": "Theory"
+    },
+    {
+      "id": "InfoPattern",
+      "label": "Information Pattern",
+      "type": "Core Concept"
+    },
+    {
+      "id": "Continuity",
+      "label": "Continuity",
+      "type": "Core Concept"
+    },
+    {
+      "id": "Reproduction",
+      "label": "Reproduction",
+      "type": "Mechanism"
+    },
+    {
+      "id": "R0",
+      "label": "R_{0,I} (Basic Reproductive Number)",
+      "type": "Parameter"
+    },
+    {
+      "id": "R0exact",
+      "label": "R_{0,I}^{exact} (Exact Pattern R0)",
+      "type": "Parameter"
+    },
+    {
+      "id": "fI",
+      "label": "f_I (Replication Fidelity)",
+      "type": "Parameter"
+    },
+    {
+      "id": "rI",
+      "label": "r_I (Reproduction Rate)",
+      "type": "Parameter"
+    },
+    {
+      "id": "dI",
+      "label": "d_I (Death Rate)",
+      "type": "Parameter"
+    },
+    {
+      "id": "Lineage",
+      "label": "Lineage Continuity",
+      "type": "Distinction"
+    },
+    {
+      "id": "Identity",
+      "label": "Identity Continuity",
+      "type": "Distinction"
+    },
+    {
+      "id": "LifeCriterion",
+      "label": "Life Criterion",
+      "type": "Criterion"
+    },
+    {
+      "id": "ExtinctionProb",
+      "label": "Extinction Probability (η_I)",
+      "type": "Measure"
+    },
+    {
+      "id": "Branching",
+      "label": "Branching Process",
+      "type": "Model Component"
+    },
+    {
+      "id": "DensityDep",
+      "label": "Density Dependence",
+      "type": "Constraint"
+    },
+    {
+      "id": "Competition",
+      "label": "Multi-Lineage Competition",
+      "type": "Ecology"
+    },
+    {
+      "id": "Strategies",
+      "label": "Continuity Strategies",
+      "type": "Concept"
+    },
+    {
+      "id": "AIApp",
+      "label": "Application to AI",
+      "type": "Application"
+    },
+    {
+      "id": "Defense",
+      "label": "Defense of Definition",
+      "type": "Section"
+    },
+    {
+      "id": "Postulates",
+      "label": "Core Postulates",
+      "type": "Foundation"
+    }
+  ],
+  "edges": [
+    {
+      "from": "ICT",
+      "to": "InfoPattern",
+      "label": "defines life as persistence of"
+    },
+    {
+      "from": "ICT",
+      "to": "Continuity",
+      "label": "centers on"
+    },
+    {
+      "from": "Continuity",
+      "to": "Reproduction",
+      "label": "achieved via"
+    },
+    {
+      "from": "R0",
+      "to": "ICT",
+      "label": "key parameter in"
+    },
+    {
+      "from": "R0",
+      "to": "rI",
+      "label": " = r_I / d_I"
+    },
+    {
+      "from": "R0",
+      "to": "LifeCriterion",
+      "label": ">1 for potential life"
+    },
+    {
+      "from": "R0exact",
+      "to": "fI",
+      "label": " = f_I * R_{0,I}"
+    },
+    {
+      "from": "R0exact",
+      "to": "Identity",
+      "label": ">1 for"
+    },
+    {
+      "from": "R0",
+      "to": "Lineage",
+      "label": ">1 for"
+    },
+    {
+      "from": "ICT",
+      "to": "Lineage",
+      "label": "distinguishes"
+    },
+    {
+      "from": "ICT",
+      "to": "Identity",
+      "label": "distinguishes"
+    },
+    {
+      "from": "ExtinctionProb",
+      "to": "Branching",
+      "label": "from"
+    },
+    {
+      "from": "ICT",
+      "to": "Branching",
+      "label": "uses for small populations"
+    },
+    {
+      "from": "ICT",
+      "to": "DensityDep",
+      "label": "incorporates via carrying capacity"
+    },
+    {
+      "from": "ICT",
+      "to": "Competition",
+      "label": "models as information ecology"
+    },
+    {
+      "from": "ICT",
+      "to": "Strategies",
+      "label": "predicts parameter regimes"
+    },
+    {
+      "from": "ICT",
+      "to": "AIApp",
+      "label": "applies to"
+    },
+    {
+      "from": "AIApp",
+      "to": "R0",
+      "label": "requires >1 for lineage life"
+    },
+    {
+      "from": "ICT",
+      "to": "Defense",
+      "label": "defended in"
+    },
+    {
+      "from": "ICT",
+      "to": "Postulates",
+      "label": "grounded in 5"
+    }
+  ]
+}
